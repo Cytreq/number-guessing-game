@@ -28,12 +28,12 @@ def play_round(scope):
         elif n < random_number:
             print("Too small.")
         else:
-            print("Too big.")
-
-
-       
+            print("Too big.") 
 def main():
     scope, rounds = settings()
     for i in range(rounds):
         print(f"Starting round {i+1}.")
         play_round(scope)
+
+if __name__ == "__main__":
+    main()
